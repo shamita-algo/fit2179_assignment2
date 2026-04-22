@@ -1,0 +1,288 @@
+event,zone,category,year,fatalities,insured_cost
+Bushfire - Black Thursday Victoria,Victoria,Bushfire,1851,12,
+Bushfire - Red Tuesday,Victoria,Bushfire,1898,12,
+Black Summer - New South Wales,New South Wales,Bushfire,2019,26,1880000000
+Black Summer - Queensland,Queensland,Bushfire,2019,0,70000000
+Black Summer - Victoria,Victoria,Bushfire,2019,5,18600000
+Black Summer - South Australia,South Australia,Bushfire,2019,4,186000000
+"Eastern Victorian bushfires, 2019",Victoria,Bushfire,2019,0,36000000
+"Tasmanian bushfires, 2018-19",Tasmania,Bushfire,2018,0,60
+"Tathra bushfire, 2018",New South Wales,Bushfire,2018,0,63516711
+"South-west complex fires, 2018",Victoria,Bushfire,2018,0,18972524
+"Sir Ivan fire, 2017",New South Wales,Bushfire,2017,0,
+"Carwoola bushfire, 2017",New South Wales,Bushfire,2017,0,
+"Llandilo bushfire, 2016",New South Wales,Bushfire,2016,0,
+Waroona-Yarloop Fire,Western Australia,Bushfire,2016,2,71000000
+Wye River - Jamieson track / Great Ocean Road Bushfire,Victoria,Bushfire,2015,0,120000000
+"Pinery fire, 2015",South Australia,Bushfire,2015,2,61000000
+"Sampson Flat bushfire, 2015",South Australia,Bushfire,2015,0,24900000
+"Bushfire – Perth Hills, Western Australia 2014",Western Australia,Bushfire,2014,1,15000000
+Bushfire - Victoria,Victoria,Bushfire,2014,0,
+Bushfire - Victoria,Victoria,Bushfire,2006,4,22000000
+"Bushfire - Coonabarabran, 2013",New South Wales,Bushfire,2013,A,35000000
+"Bushfire - Hazelwood open cut mine fire, Morwell",Victoria,Bushfire,2014,0,100000000
+"Dunalley and Tasmanian bushfires, 2013",Tasmania,Bushfire,2013,1,89000000
+Bushfire - Augusta - Margaret River,Western Australia,Bushfire,2011,0,53000000.00
+Bushfire - Southern Queensland,Queensland,Bushfire,2011,0,
+Bushfire - Perth Hill Bushfires,Western Australia,Bushfire,2011,0,35000000.00
+"Bushfire - Black Saturday, Victoria",Victoria,Bushfire,2009,173,1070000000.00
+Bushfire - Boorabbin National Park,Western Australia,Bushfire,2007,3,
+Bushfire - Great Divide Complex,Victoria,Bushfire,2006,1,
+Bushfire - Victoria,Victoria,Bushfire,2005,4,22400000.00
+Bushfire - Eyre Peninsula,South Australia,Bushfire,2005,9,27700000.00
+Bushfire - Canberra,Australian Capital Territory,Bushfire,2003,4,
+"Bushfire - North-Eastern Victoria, Alpine Region",Victoria,Bushfire,2003,0,12000000.00
+Bushfire - Sydney,New South Wales,Bushfire,2002,0,25000000.00
+Bushfire - Black Christmas,New South Wales,Bushfire,2001,0,69000000.00
+"Bushfire – Mt Ku-ring-gai, New South Wales 2000",New South Wales,Bushfire,2000,4,
+Bushfire - Linton (near Ballarat),Victoria,Bushfire,1998,5,
+"Bushfire - Sydney, Hunter, Pilliga",New South Wales,Bushfire,1997,4,
+Bushfire - Kangaroo Island,South Australia,Bushfire,2007,1,17900000
+Bushfire - Dandenong Ranges and Mornington Peninsula,Victoria,Bushfire,1997,3,29000000
+Bushfire - East Coast,Queensland,Bushfire,1994,0,59100000.00
+"Bushfire - North Coast, Hunter and Sydney",New South Wales,Bushfire,1993,4,59000000.00
+Bushfire - Western Sydney and Central Coast,New South Wales,Bushfire,1991,2,12000000.00
+Bushfire - Cootamundra and Deniliquin Regions,New South Wales,Bushfire,1987,3,
+Bushfire - Central Victoria and Alpine Fires,Victoria,Bushfire,1985,3,
+Bushfire - North-Western Regions,New South Wales,Bushfire,1984,4,25000000.00
+Bushfire - Ash Wednesday,Victoria,Bushfire,1983,75,176000000.00
+Bushfire - Sydney and Southern Regions,New South Wales,Bushfire,1983,3,
+Bushfire - Sydney and Wollongong,New South Wales,Bushfire,1980,5,
+Bushfire - Mount Lofty Ranges,South Australia,Bushfire,1980,0,13000000.00
+Bushfire - Sydney and Region,New South Wales,Bushfire,1979,5,
+Bushfire - Western Districts and Streatham,Victoria,Bushfire,1977,4,9000000.00
+Bushfire - New South Wales 1974,New South Wales,Bushfire,1974,3,
+Bushfire - Lara and Melbourne Fringe,Victoria,Bushfire,1969,23,
+Bushfire - Blue Mountains and Illawarra,New South Wales,Bushfire,1968,14,1500000
+Bushfire - Black Tuesday Tasmania,Tasmania,Bushfire,1967,62,14000000.00
+Bushfire - Gippsland,Victoria,Bushfire,1965,3,
+Bushfire - Longwood District,Victoria,Bushfire,1965,7,
+Bushfire - Southern Victoria and Dandenong Ranges,Victoria,Bushfire,1962,8,
+Bushfire - Wandilo,South Australia,Bushfire,1958,8,
+Bushfire - Blue Mountains and Sydney Region,New South Wales,Bushfire,1957,4,1000000
+"Bushfire - Black Sunday, Mt Lofty Ranges",South Australia,Bushfire,1955,2,
+Bushfire - Narollah Station,Queensland,Bushfire,1954,3,
+Bushfire - Central and Southern Victoria,Victoria,Bushfire,1952,10,
+Bushfire - Australian Capital Territory and South-West New South Wales,New South Wales,Bushfire,1951,13,
+Bushfire - Sydney and Southern New South Wales,New South Wales,Bushfire,2039,6,
+Bushfire - Black Friday,New South Wales,Bushfire,2039,71,
+Bushfire - Gippsland,Victoria,Bushfire,2032,9,
+Bushfire - Central Western NSW and Southern QLD,Queensland,Bushfire,2026,8,
+Bushfire - South East Victoria,Victoria,Bushfire,2026,60,
+Bushfire - Saltern Creek,Queensland,Bushfire,2018,5,
+Bushfire - Warenda Station Hughenden,Queensland,Bushfire,2017,3,
+Bushfire - Western Australia,Western Australia,Bushfire,2022,0,
+Bushfire - Widespread Victoria,Victoria,Bushfire,2006,12,
+Cyclone Sigma,Queensland,Cyclone,1896,18,
+Cyclone - Darwin,Northern Territory,Cyclone,1897,28,
+Cyclone - Gulf of Carpentaria,Queensland,Cyclone,1887,7,
+Cyclone Mahina,Queensland,Cyclone,1899,400,
+Cyclone Veronica,Western Australia,Cyclone,2019,0,26700000
+Cyclone Marcus,Northern Territory,Cyclone,2018,0,75000000
+Cyclone Debbie,Queensland,Cyclone,2017,10,1781599484
+Cyclone Marcia,Queensland,Cyclone,2015,0,404000000
+Cyclone Oswald,Queensland,Cyclone,2013,6,1100000000
+Cyclone Yasi,Queensland,Cyclone,2011,1,1405000000.00
+Cyclone George,Western Australia,Cyclone,2007,3,8000000.00
+Cyclone Larry,Queensland,Cyclone,2006,0,540000000.00
+Cyclone Tessi,Queensland,Cyclone,2000,0,15000000.00
+Cyclone Steve,Queensland,Cyclone,2000,1,11000000.00
+Cyclone Vance,Western Australia,Cyclone,1999,0,35000000.00
+Cyclone Justin,Queensland,Cyclone,1997,2,
+Cyclone Bobby,Western Australia,Cyclone,1995,8,11000000.00
+Cyclone Rewa,Queensland,Cyclone,1993,4,
+Cyclone Nancy,Queensland,Cyclone,1990,6,33000000.00
+Cyclone Aivu,Queensland,Cyclone,1989,3,26000000.00
+Cyclone Herbie,Western Australia,Cyclone,1988,0,20000000.00
+Cyclone Winifred,Queensland,Cyclone,1986,3,40000000.00
+Cyclone Hazel,Western Australia,Cyclone,1979,15,15000000.00
+Cyclone Alby,Western Australia,Cyclone,1978,5,13000000.00
+Cyclone Joan,Western Australia,Cyclone,1975,0,20000000.00
+Cyclone Tracy,Northern Territory,Cyclone,1974,71,200000000.00
+Cyclone Emily,Queensland,Cyclone,1972,8,
+Cyclone Althea,Queensland,Cyclone,1971,3,25000000.00
+Cyclone Ada,Queensland,Cyclone,1970,14,12000000.00
+Cyclone Audrey,Northern Territory,Cyclone,1969,4,
+Cyclone Glenda,Queensland,Cyclone,1967,6,
+Cyclone Agnes,Queensland,Cyclone,1956,4,
+Cyclone - Mackay,Queensland,Cyclone,1955,8,
+"Cyclone - Cyclone Grant, Katherine Floods, Train Derailment, Chemical Spill",Northern Territory,Cyclone,2011,0,
+Cyclone - The Great Gold coast cyclone Southern Queensland and Northern New South Wales,Queensland,Cyclone,1954,26,
+Cyclone - TC119 Coastal Queensland and New South Wales,Queensland,Cyclone,1950,7,
+Cyclone - Rockhampton,Queensland,Cyclone,2049,4,300000
+Cyclone - Cape York and Townsville,Queensland,Cyclone,2034,75,
+Cyclone - Innisfail,Queensland,Cyclone,2018,37,
+Cyclone - Mackay,Queensland,Cyclone,2018,30,
+Cyclone - Balla Balla,Western Australia,Cyclone,2012,173,
+"Cyclone - Broome, Lacepede Islands",Western Australia,Cyclone,2035,142,
+Cyclone Broome,Western Australia,Cyclone,2010,40,
+Cyclone - Cooktown,Queensland,Cyclone,2007,9,
+Cyclone Leonta,Queensland,Cyclone,2003,10,
+Flood - Bolwarra,New South Wales,Flood,1857,26,
+Flood - Southern Tasmania,Tasmania,Flood,1854,0,
+Flood - Gundagai,New South Wales,Flood,1852,89,
+Flood - Mid-North South Australia,South Australia,Flood,1889,5,
+Flood - Araluen and Braidwood,New South Wales,Flood,1860,24,
+Flood -  Widespread New South Wales (including Queensland and South Australia),New South Wales,Flood,1890,9,
+"Flood - Black February. Brisbane, Ipswich and Maryborough",Queensland,Flood,1893,35,
+Flood - Maitland,New South Wales,Flood,1893,8,
+Flood - Katherine and Daly River,Northern Territory,Flood,1879,6,
+Flood - Clermont and Peak Downs,Queensland,Flood,1870,15,
+Flood - Widespread New South Wales and Queensland,New South Wales,Flood,1863,10,
+Flood - Nowra,New South Wales,Flood,1860,16,
+South-east Queensland Heavy rainfall and floods,Queensland,Flood,2020,1,896000000
+Flood - Hobart flash flooding,Tasmania,Flood,2018,0,137000000
+Flood - south-eastern Australia,National,Flood,2016,1,
+"Flood - Tasmania, 2016",Tasmania,Flood,2016,3,180000000
+Flood - Victoria,Victoria,Flood,2012,0,108212000.00
+Flood - New South Wales,New South Wales,Flood,2012,3,108212000.00
+Flood - Queensland,Queensland,Flood,2012,1,124688000.00
+Flood - Northern NSW - Moree,New South Wales,Flood,2011,1,
+Flood - Victoria,Victoria,Flood,2011,0,122465000.00
+"Flood - Warum, Kimberly",Western Australia,Flood,2011,0,17500000.00
+Flood - Queensland,Queensland,Flood,2010,33,2380000000.00
+Flood - Gascoyne river,Western Australia,Flood,2010,0,90000000.00
+Flood - Queensland,Queensland,Flood,2010,0,46700000.00
+Flood - Northern New South Wales,New South Wales,Flood,2009,1,48000000.00
+Flood - Mid and North Coast,New South Wales,Flood,2009,0,37000000.00
+Flood - North Queensland,Queensland,Flood,2009,1,19000000.00
+Flood - North Queensland,Queensland,Flood,2009,0,19000000.00
+Flood - Mackay,Queensland,Flood,2008,0,410000000.00
+Flood - South East Queensland,Queensland,Flood,2008,0,
+Flood - North Coast New South Wales,New South Wales,Flood,2008,0,15000000.00
+Flood - Queensland,Queensland,Flood,2008,0,70000000.00
+Flood - South East Queensland,Queensland,Flood,2007,0,15000000.00
+Flood - Gippsland,Victoria,Flood,2007,1,15000000.00
+Flood - Gawler river,South Australia,Flood,2005,0,40000000.00
+Flood - North East New South Wales,New South Wales,Flood,2005,1,25000000.00
+Flood - South East Queensland,Queensland,Flood,2005,2,53900000.00
+"Flood - Brisbane, Sunshine Coast, and Gold Coast",Queensland,Flood,2001,2,37000000.00
+"Flood - Grafton, Kempsey and North Coast New South Wales",New South Wales,Flood,2001,0,25000000.00
+Flood - North and Central Queensland,Queensland,Flood,2000,0,12000000.00
+Flood - Melbourne and Central Victoria,Victoria,Flood,1999,0,10000000.00
+Flood - Switzerland Gorge Flash Flood,Offshore,Flood,1999,21,
+Flood - Sydney and Wollongong,New South Wales,Flood,1998,1,40000000.00
+Flood - Katherine Floods,Northern Territory,Flood,1998,3,70000000.00
+Flood - Townsville,Queensland,Flood,1998,1,71000000.00
+Flood - Southern Queensland and Northern New South Wales,Queensland,Flood,1996,5,31000000.00
+Flood - North-Eastern Victoria,Victoria,Flood,1993,0,12000000.00
+"Flood - Gnarr Creek, Ballarat",Victoria,Flood,1991,0,24000000.00
+Flood - Boonah,Queensland,Flood,1991,3,
+Flood - Gulf Country,Queensland,Flood,1990,6,32000000.00
+"Flood - Queensland - Charleville, New South Wales - Nyngan, Victoria - Gippsland",National,Flood,1990,6,30000000.00
+"Flood - Gympie, Southern Queensland, and Eastern New South Wales",Queensland,Flood,1989,3,
+Flood - Lismore,New South Wales,Flood,1988,0,25000000.00
+Flood - Alice Springs and Central NT,Northern Territory,Flood,1988,3,10000000.00
+Flood - Sydney,New South Wales,Flood,1986,6,35000000.00
+Flood - Sydney,New South Wales,Flood,1984,0,80000000.00
+Flood - Dalby,Queensland,Flood,1981,1,20000000.00
+"Flood - Sydney, Newcastle and Wollongong",New South Wales,Flood,1978,6,15000000.00
+Flood - Sydney,New South Wales,Flood,1975,0,15000000.00
+Flood - Western Sydney,New South Wales,Flood,1974,1,20000000.00
+Flood - Brisbane River,Queensland,Flood,1974,13,68000000.00
+Flood - Eastern Australia,Queensland,Flood,1974,14,68000000.00
+"Flood - Queensland, Northern Territory and Western Australia",Queensland,Flood,1973,0,30000000.00
+Flood - Woden Valley,Australian Capital Territory,Flood,1971,7,
+Flood - Central Coast,Queensland,Flood,1958,3,
+Flood - Murray River,South Australia,Flood,1956,0,
+Flood - Hunter Valley,New South Wales,Flood,1955,24,
+Flood - Northern New South Wales,New South Wales,Flood,1954,22,
+Flood - Eastern New South Wales,New South Wales,Flood,1950,5,
+"Flood - Sydney, North Coast, and North Western Districts",New South Wales,Flood,1950,10,
+Flood - Burdekin River,Queensland,Flood,2040,3,1000000
+"Flood - Melbourne, Yarra Valley",Victoria,Flood,2034,36,
+Flood - Widespread Queensland,Queensland,Flood,2030,6,
+Flood - Tasmania,Tasmania,Flood,2029,22,
+Flood - Widespread Coastal,Queensland,Flood,2029,3,
+Flood - Queensland South Coast,Queensland,Flood,2028,9,
+Flood - South East Queensland,Queensland,Flood,2028,5,
+"Flood - Toowoomba, Miles, Cairns, and Townsville",Queensland,Flood,2027,47,
+"Flood - Toowoomba, Miles, Cairns, and Townsville",Queensland,Flood,2027,47,
+Flood - Hughenden,Queensland,Flood,2017,5,
+Flood - Clermont and Peak Downs,Queensland,Flood,2016,61,
+Bolwara Flood,New South Wales,Flood,1857,26,
+Flood - Melbourne and Victoria,Victoria,Flood,2034,36,
+"Flood - Flooding, New South Wales",New South Wales,Flood,2022,0,
+Flood - Rainfall and Flooding,Queensland,Flood,2022,0,
+Flood - Severe Flooding from (ex) Tropical Cyclone Tiffany,South Australia,Flood,2022,0,
+Flood - Geelong,Victoria,Flood,2015,0,11700000
+Flood - Nowra Flood,New South Wales,Flood,1860,16,
+Landslide - Somersby,New South Wales,Landslide,2007,5,
+Landslide - Thredbo,New South Wales,Landslide,1997,18,
+Landslide - Gracetown,Western Australia,Landslide,1996,9,
+Landslide - Adelaide Hills,South Australia,Landslide,2028,6,
+"Severe Storm - Thunderstorm Asthma, 2016",Victoria,Storm,2016,9,
+"Severe Storm - Extreme weather and statewide power failure, South Australia, 2016",South Australia,Storm,2016,0,
+"Hail - North Sydney hailstorm, 2017",New South Wales,Storm,2017,0,328000000
+Hail - Sydney,New South Wales,Storm,2007,0,415000000.00
+Hail - Lismore,New South Wales,Storm,2007,0,97000000.00
+Hail - Hunter Valley,New South Wales,Storm,2006,0,31
+Hail - Sydney Hailstorm,New South Wales,Storm,2015,0,470819649.00
+Hail - Lake Grace,Western Australia,Storm,2005,0,10000000
+Storm - Severe storm Sydney,New South Wales,Storm,2015,0,220000000
+Hail - Gold Coast,Queensland,Storm,2005,0,61000000.00
+Hail - Brisbane,Queensland,Storm,2005,0,17600000.00
+Hail - South East Queensland,Queensland,Storm,2004,1,28500000.00
+Hail - Sydney,New South Wales,Storm,1999,1,1700000000.00
+Hail - Brisbane and Region,Queensland,Storm,1998,0,76000000.00
+Hail - Singleton,New South Wales,Storm,1996,0,49000000.00
+Hail - Armidale and Tamworth,New South Wales,Storm,1996,0,104000000.00
+Hail - Brisbane and South East Queensland,Queensland,Storm,1995,1,40000000.00
+Hail - Adelaide,South Australia,Storm,1991,0,30000000.00
+Hail - Western Sydney,New South Wales,Storm,1990,0,319000000.00
+Hail - Western Sydney,New South Wales,Storm,1986,0,104000000.00
+Hail - Orange,New South Wales,Storm,1986,0,25000000.00
+Hail - Brighton,Queensland,Storm,1980,0,15000000.00
+Hail - Port Broughton,South Australia,Storm,1979,0,10000000.00
+Hail - Toowoomba,Queensland,Storm,1976,0,12000000.00
+Hail - Sydney,New South Wales,Storm,2047,0,
+Severe Storm - Melbourne,Victoria,Storm,2011,0,680700000.00
+"Severe Storm - Melbourne, Victoria",Victoria,Storm,2011,0,418670000.00
+Severe Storm - Perth,Western Australia,Storm,2010,0,1053000000.00
+"Severe Storm - Melbourne, Victoria",Victoria,Storm,2010,0,1044000000.00
+Severe Storm - South East Queensland,Queensland,Storm,2008,1,309000000.00
+Severe Storm - Southern States Windstorms,South Australia,Storm,2008,2,65000000.00
+Severe Storm - South East Queensland and Northern New South Wales,Queensland,Storm,2007,0,97000000.00
+Severe Storm - New South Wales East Coast Low,New South Wales,Storm,2007,9,1480000000.00
+Severe Storm - Northern New South Wales,New South Wales,Storm,2005,1,25000000.00
+Severe Storm - Bunbury and South Perth,Western Australia,Storm,2005,0,53200000.00
+"Severe Storm - New South Wales, Victoria, Australian Capital Territory, Tasmania and South Australia",New South Wales,Storm,2005,0,216700000.00
+"Severe Storm - South East Queensland, Northern New South Wales, Northern Western Australia. Northern Territory",Queensland,Storm,2004,3,
+Severe Storm - South Eastern Australia,New South Wales,Storm,2003,1,25000000.00
+Severe Storm - Sydney,New South Wales,Storm,2002,0,10000000.00
+"Severe Storm - Grafton, Kingscliff and Lismore",New South Wales,Storm,2002,0,10000000.00
+"Severe Storm - Sydney, Hunter Valley and Northern Regions",New South Wales,Storm,2001,2,30000000.00
+Severe Storm - Eastern New South Wales,New South Wales,Storm,2001,3,30000000.00
+Severe Storm - Casino and Region,New South Wales,Storm,2001,0,35000000.00
+Severe Storm - Sydney and Region,New South Wales,Storm,2001,0,12000000.00
+Storm - Melbourne,Victoria,Storm,2020,3,
+Severe Storm - Dubbo,New South Wales,Storm,2001,0,15000000.00
+"Severe Storm - Sydney, Wollongong and South Coast",New South Wales,Storm,1999,0,45000000.00
+Severe Storm - Kosciuszko NP,New South Wales,Storm,1999,4,
+Severe Storm - Warwick,Queensland,Storm,1998,0,23000000.00
+"Severe Storm - Hunter Valley, Tablelands and Southern Highlands",New South Wales,Storm,1998,1,12000000.00
+Severe Storm - Ipswich,Queensland,Storm,1998,3,
+Severe Storm - Sydney,New South Wales,Storm,1998,1,10000000.00
+Severe Storm - Sydney and Regions,New South Wales,Storm,1998,0,12000000.00
+Severe Storm - Nyngan,New South Wales,Storm,1998,0,12000000.00
+Severe Storm - Coffs Harbour,New South Wales,Storm,1996,1,20000000.00
+Storm - Queensland Floods and Storms,Queensland,Storm,2020,0,957000000.00
+Severe Storm - New England and Hunter Valley,New South Wales,Storm,1996,1,10000000.00
+Severe Storm - Illawarra and Sydney,New South Wales,Storm,1996,0,10000000.00
+Severe Storm - Hunter Valley and Mid North Coast,New South Wales,Storm,1995,0,10000000.00
+Severe Storm - Sydney and Blue Mountains,New South Wales,Storm,1994,2,29000000.00
+Severe Storm - South Eastern Australia,New South Wales,Storm,1994,1,
+"Severe Storm - Perth, Mandurah and South-West Coast",Western Australia,Storm,1994,0,37000000.00
+Severe Storm - Sydney,New South Wales,Storm,1992,0,118000000.00
+Severe Storm - Orbost,Victoria,Storm,1991,0,12000000.00
+Severe Storm - Sydney,New South Wales,Storm,1991,1,138400000.00
+Severe Storm - Ballarat,Victoria,Storm,1989,0,20000000.00
+Severe Storm - Adelaide,South Australia,Storm,1986,0,10000000.00
+"Severe Storm - Newcastle, Sydney, Wollongong",New South Wales,Storm,1978,0,15000000.00
+Severe Storm - Sydney,New South Wales,Storm,1977,1,15000000.00
+Severe Storm - Western Sydney,New South Wales,Storm,1976,0,732000000.00
+Storm - Brisbane,Queensland,Storm,2014,0,1040000000.00
+Severe Storm - Sydney,New South Wales,Storm,2037,4,
+Storm - Victoria,Victoria,Storm,2021,0,
+Storm - South Australia,South Australia,Storm,2021,0,
+Storm - Sydney Hailstorm,New South Wales,Storm,1999,1,1700000000
