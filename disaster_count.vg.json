@@ -9,7 +9,7 @@
     "width": 700,
     "height": 300,
     "data": {
-      "url": "data/disasters_clean.csv",
+      "url": "disasters_clean.csv",
       "format": {"type": "csv"}
     },
     "transform": [
