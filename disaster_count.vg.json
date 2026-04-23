@@ -9,7 +9,7 @@
     "width": 700,
     "height": 300,
     "data": {
-      "url": "disasters_clean.csv",
+      "url": "https://raw.githubusercontent.com/shamita-algo/fit2179_assignment2/refs/heads/main/disasters_clean.csv",
       "format": {"type": "csv"}
     },
     "transform": [
