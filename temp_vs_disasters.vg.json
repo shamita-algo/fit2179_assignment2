@@ -22,7 +22,7 @@
         "lookup": "year",
         "from": {
           "data": {
-            "url": "data/temperature_clean.csv",
+            "url": "https://raw.githubusercontent.com/shamita-algo/fit2179_assignment2/refs/heads/main/temperature_clean.csv",
             "format": {"type": "csv"}
           },
           "key": "year",
