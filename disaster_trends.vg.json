@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Disaster Trends by Type",
+    "subtitle": "Select a disaster type to explore its trend over time",
+    "fontSize": 16,
+    "subtitleFontSize": 12
+  },
+  "width": 700,
+  "height": 300,
+  "data": {
+    "url": "data/disasters_clean.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "disaster_type",
+      "value": "Bushfire",
+      "bind": {
+        "input": "select",
+        "options": ["Bushfire", "Flood", "Cyclone", "Storm", "Landslide"],
+        "name": "Select Disaster Type: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.category == disaster_type"},
+    {"filter": "datum.year >= 1950 && datum.year <= 2023"},
+    {
+      "aggregate": [{"op": "count", "as": "count"}],
+      "groupby": ["year"]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "area", "opacity": 0.3, "line": true, "interpolate": "monotone"},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "axis": {"title": "Year", "format": "d"},
+          "scale": {"domain": [1950, 2023]}
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "axis": {"title": "Number of Events"},
+          "scale": {"domain": [0, 6]}
+        },
+        "color": {
+          "condition": {
+            "param": "disaster_type",
+            "value": "#d73027"
+          },
+          "value": "#d73027"
+        },
+        "tooltip": [
+          {"field": "year", "title": "Year", "format": "d"},
+          {"field": "count", "title": "Events"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "strokeWidth": 2, "color": "#d73027", "interpolate": "monotone"},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {"domain": [1950, 2023]}
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": {"domain": [0, 6]}
+        }
+      }
+    }
+  ]
+}

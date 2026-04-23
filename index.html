@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Climate Change & Natural Disasters in Australia</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container">
+      <h1>Australia's Climate Crisis</h1>
+      <p>Bushfires, floods, and cyclones are becoming more frequent and more deadly. Over a century of data tells a stark story about a continent on the frontline of climate change.</p>
+      <div class="stats">
+        <div class="stat-box">
+          <div class="number">+1.4°C</div>
+          <div class="label">Warming since 1910</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">18.6M ha</div>
+          <div class="label">Burned in Black Summer</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">287+</div>
+          <div class="label">Major disasters recorded</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">400+</div>
+          <div class="label">Lives lost in single events</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: TEMPERATURE -->
+  <div class="section">
+    <div class="container">
+      <h2>A Continent Getting Hotter</h2>
+      <p>Australia has warmed by approximately 1.4°C since national records began in 1910. Most of this warming has occurred after 1950, driven by rising greenhouse gas emissions. Cool years are becoming rarer — and record-breaking heat is becoming the norm.</p>
+      <div class="chart-wrap" id="temp-chart"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: DISASTERS OVER TIME -->
+  <div class="section">
+    <div class="container">
+      <h2>Disasters Are Increasing</h2>
+      <p>The number of recorded natural disasters has grown significantly since the 1990s. While improved record-keeping plays a role, the data reflects a real and alarming increase in the frequency of extreme weather events across Australia.</p>
+      <div class="chart-wrap" id="disaster-count"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: MAP + DECADE BREAKDOWN -->
+  <div class="section">
+    <div class="container">
+      <h2>Disasters Across the Nation</h2>
+      <p>No state is immune. New South Wales and Victoria bear the heaviest disaster burden, while Queensland faces frequent cyclones and floods. The southeast corner of Australia — home to most of the population — is also the most disaster-prone region.</p>
+      <div class="chart-wrap" id="disaster-map"></div>
+      <p style="margin-top: 30px;">Breaking down disasters by type, floods and bushfires dominate — and both have surged dramatically since the 1990s as temperatures have climbed.</p>
+      <div class="chart-wrap" id="disaster-decade"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: DEADLIEST -->
+  <div class="section">
+    <div class="container">
+      <h2>The Human Cost</h2>
+      <p>Some disasters have left permanent scars on Australia's history. Cyclone Mahina remains the deadliest on record, while the 2009 Black Saturday bushfires are the deadliest in modern times. These events remind us that natural disasters are not just statistics — they are human tragedies.</p>
+      <div class="chart-wrap" id="deadliest"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: HEATMAP -->
+  <div class="section">
+    <div class="container">
+      <h2>Which Disasters Are Getting Worse?</h2>
+      <p>This heatmap reveals how each disaster type has intensified over the decades. Storms and bushfires have seen the sharpest increases since the 1990s, reflecting a continent increasingly at the mercy of extreme weather.</p>
+      <div class="chart-wrap" id="disaster-heatmap"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 6: ECONOMIC COST -->
+  <div class="section">
+    <div class="container">
+      <h2>The Billion Dollar Toll</h2>
+      <p>The financial cost of natural disasters has exploded in recent decades. The 2010s alone saw over $16 billion in insured losses — more than all previous decades combined. As disasters intensify, so does the economic burden on communities and insurers.</p>
+      <div class="chart-wrap" id="disaster-cost"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: TEMP VS DISASTERS -->
+  <div class="section">
+    <div class="container">
+      <h2>The Climate Connection</h2>
+      <p>The link between rising temperatures and increasing disasters is clear. As Australia's temperature anomaly grows, so does the number of recorded disasters each year. The darker dots — representing more recent years — cluster in the upper right, showing the accelerating trend.</p>
+      <div class="chart-wrap" id="temp-vs-disasters"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 8: DISASTER TYPES -->
+  <div class="section">
+    <div class="container">
+      <h2>What Threatens Australia Most?</h2>
+      <p>Floods are the most common natural disaster in Australia, followed closely by bushfires and cyclones. Together these three categories account for the vast majority of all recorded disaster events.</p>
+      <div class="chart-wrap" id="disaster-types"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 9: INTERACTIVE TRENDS -->
+  <div class="section">
+    <div class="container">
+      <h2>Explore the Trends Yourself</h2>
+      <p>Use the dropdown below to explore how different disaster types have trended over time. Each tells its own story — from the surge in storms in the 1990s to the alarming spike in bushfires around 2019–2020.</p>
+      <div class="chart-wrap" id="disaster-trends"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Data sources: Bureau of Meteorology (BOM) · Australian Institute for Disaster Resilience (AIDR)</p>
+    <p>Created by Shamita · FIT2179 Data Visualisation · Monash University · 2026</p>
+  </footer>
+
+  <script>
+    vegaEmbed('#temp-chart', 'temperature_chart.vg.json').catch(console.error);
+    vegaEmbed('#disaster-count', 'disaster_count.vg.json').catch(console.error);
+    vegaEmbed('#disaster-map', 'disaster_map.vg.json').catch(console.error);
+    vegaEmbed('#disaster-decade', 'disaster_decade.vg.json').catch(console.error);
+    vegaEmbed('#deadliest', 'deadliest_disasters.vg.json').catch(console.error);
+    vegaEmbed('#disaster-heatmap', 'disaster_heatmap.vg.json').catch(console.error);
+    vegaEmbed('#disaster-cost', 'disaster_cost.vg.json').catch(console.error);
+    vegaEmbed('#temp-vs-disasters', 'temp_vs_disasters.vg.json').catch(console.error);
+    vegaEmbed('#disaster-types', 'disaster_types.vg.json').catch(console.error);
+    vegaEmbed('#disaster-trends', 'disaster_trends.vg.json').catch(console.error);
+  </script>
+
+</body>
+</html>

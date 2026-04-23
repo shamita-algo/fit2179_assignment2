@@ -1,0 +1,70 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Rising Temperatures vs Increasing Disasters",
+      "subtitle": "Relationship between temperature anomaly and disaster frequency per year",
+      "fontSize": 16,
+      "subtitleFontSize": 12
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "data/disasters_clean.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"filter": "datum.year >= 1950 && datum.year <= 2023"},
+      {
+        "aggregate": [{"op": "count", "as": "disaster_count"}],
+        "groupby": ["year"]
+      },
+      {
+        "lookup": "year",
+        "from": {
+          "data": {
+            "url": "data/temperature_clean.csv",
+            "format": {"type": "csv"}
+          },
+          "key": "year",
+          "fields": ["anomaly"]
+        }
+      },
+      {"filter": "datum.anomaly != null"}
+    ],
+    "layer": [
+      {
+        "mark": {"type": "point", "filled": true, "size": 80, "opacity": 0.7},
+        "encoding": {
+          "x": {
+            "field": "anomaly",
+            "type": "quantitative",
+            "axis": {"title": "Temperature Anomaly (°C)"}
+          },
+          "y": {
+            "field": "disaster_count",
+            "type": "quantitative",
+            "axis": {"title": "Number of Disasters"}
+          },
+          "color": {
+            "field": "year",
+            "type": "quantitative",
+            "scale": {"scheme": "reds"},
+            "legend": {"title": "Year"}
+          },
+          "tooltip": [
+            {"field": "year", "title": "Year"},
+            {"field": "anomaly", "title": "Temp Anomaly (°C)", "format": ".2f"},
+            {"field": "disaster_count", "title": "Disasters"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "black", "strokeWidth": 1.5, "opacity": 0.4},
+        "transform": [{"regression": "disaster_count", "on": "anomaly"}],
+        "encoding": {
+          "x": {"field": "anomaly", "type": "quantitative"},
+          "y": {"field": "disaster_count", "type": "quantitative"}
+        }
+      }
+    ]
+  }

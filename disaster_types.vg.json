@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Breakdown of Natural Disasters by Type",
+      "subtitle": "Total recorded events per disaster category in Australia",
+      "fontSize": 16,
+      "subtitleFontSize": 12
+    },
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "data/disasters_clean.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {
+        "aggregate": [{"op": "count", "as": "count"}],
+        "groupby": ["category"]
+      }
+    ],
+    "layer": [
+      {
+        "mark": {"type": "rule", "strokeWidth": 2},
+        "encoding": {
+          "y": {"field": "category", "type": "ordinal", "sort": "-x", "axis": {"title": null}},
+          "x": {"field": "count", "type": "quantitative", "axis": {"title": "Number of Disasters"}, "scale": {"domain": [0, 130]}},
+          "x2": {"value": 0},
+          "color": {
+            "field": "category",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Bushfire", "Flood", "Cyclone", "Storm", "Landslide"],
+              "range": ["#d73027", "#4575b4", "#74add1", "#fdae61", "#a6d96a"]
+            },
+            "legend": null
+          }
+        }
+      },
+      {
+        "mark": {"type": "point", "filled": true, "size": 150},
+        "encoding": {
+          "y": {"field": "category", "type": "ordinal", "sort": "-x", "axis": {"title": null}},
+          "x": {"field": "count", "type": "quantitative"},
+          "color": {
+            "field": "category",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Bushfire", "Flood", "Cyclone", "Storm", "Landslide"],
+              "range": ["#d73027", "#4575b4", "#74add1", "#fdae61", "#a6d96a"]
+            },
+            "legend": {"title": "Disaster Type"}
+          },
+          "tooltip": [
+            {"field": "category", "title": "Type"},
+            {"field": "count", "title": "Count"}
+          ]
+        }
+      }
+    ]
+  }

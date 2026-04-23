@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Natural Disasters by Type and Decade",
+      "subtitle": "Breakdown of disaster categories across decades",
+      "fontSize": 16,
+      "subtitleFontSize": 12
+    },
+    "width": 600,
+    "height": 350,
+    "data": {
+      "url": "data/disasters_clean.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"filter": "datum.year >= 1950 && datum.year <= 2023"},
+      {
+        "calculate": "floor(datum.year / 10) * 10 + 's'",
+        "as": "decade"
+      },
+      {
+        "aggregate": [{"op": "count", "as": "count"}],
+        "groupby": ["decade", "category"]
+      }
+    ],
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "decade",
+        "type": "ordinal",
+        "axis": {"title": "Decade", "labelAngle": 0}
+      },
+      "y": {
+        "field": "count",
+        "type": "quantitative",
+        "axis": {"title": "Number of Disasters"}
+      },
+      "color": {
+        "field": "category",
+        "type": "nominal",
+        "scale": {
+          "domain": ["Bushfire", "Flood", "Cyclone", "Storm", "Landslide"],
+          "range": ["#d73027", "#4575b4", "#74add1", "#fdae61", "#a6d96a"]
+        },
+        "legend": {"title": "Disaster Type"}
+      },
+      "tooltip": [
+        {"field": "decade", "title": "Decade"},
+        {"field": "category", "title": "Type"},
+        {"field": "count", "title": "Count"}
+      ]
+    }
+  }

@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Natural Disasters by State",
+      "subtitle": "Total recorded disaster events per Australian state",
+      "fontSize": 16,
+      "subtitleFontSize": 12
+    },
+    "width": 600,
+    "height": 400,
+    "projection": {"type": "mercator"},
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+          "format": {"type": "json", "property": "features"}
+        },
+        "transform": [
+          {
+            "lookup": "properties.STATE_NAME",
+            "from": {
+              "data": {
+                "values": [
+                  {"state": "New South Wales", "count": 195},
+                  {"state": "Victoria", "count": 143},
+                  {"state": "Queensland", "count": 132},
+                  {"state": "Western Australia", "count": 53},
+                  {"state": "Tasmania", "count": 48},
+                  {"state": "South Australia", "count": 45},
+                  {"state": "Northern Territory", "count": 22},
+                  {"state": "Australian Capital Territory", "count": 2}
+                ]
+              },
+              "key": "state",
+              "fields": ["count"]
+            }
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
+        "encoding": {
+          "color": {
+            "field": "count",
+            "type": "quantitative",
+            "scale": {"scheme": "reds"},
+            "legend": {"title": "Disaster Count"}
+          },
+          "tooltip": [
+            {"field": "properties.STATE_NAME", "title": "State"},
+            {"field": "count", "title": "Total Disasters"}
+          ]
+        }
+      }
+    ]
+  }

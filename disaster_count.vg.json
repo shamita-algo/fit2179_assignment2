@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Natural Disasters in Australia Over Time",
+      "subtitle": "Number of recorded disaster events per year",
+      "fontSize": 16,
+      "subtitleFontSize": 12
+    },
+    "width": 700,
+    "height": 300,
+    "data": {
+      "url": "data/disasters_clean.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"filter": "datum.year >= 1950 && datum.year <= 2023"},
+      {
+        "aggregate": [{"op": "count", "as": "count"}],
+        "groupby": ["year"]
+      }
+    ],
+    "layer": [
+      {
+        "mark": {"type": "line", "color": "#e74c3c", "strokeWidth": 2},
+        "encoding": {
+          "x": {"field": "year", "type": "quantitative", "axis": {"title": "Year", "format": "d"}},
+          "y": {"field": "count", "type": "quantitative", "axis": {"title": "Number of Disasters"}},
+          "tooltip": [
+            {"field": "year", "title": "Year", "format": "d"},
+            {"field": "count", "title": "Disasters"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "point", "color": "#e74c3c", "size": 50, "filled": true},
+        "encoding": {
+          "x": {"field": "year", "type": "quantitative"},
+          "y": {"field": "count", "type": "quantitative"},
+          "tooltip": [
+            {"field": "year", "title": "Year", "format": "d"},
+            {"field": "count", "title": "Disasters"}
+          ]
+        }
+      }
+    ]
+  }

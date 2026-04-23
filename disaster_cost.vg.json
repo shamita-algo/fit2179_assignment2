@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Economic Cost of Natural Disasters Over Time",
+      "subtitle": "Total insured cost of disasters per decade (AUD)",
+      "fontSize": 16,
+      "subtitleFontSize": 12
+    },
+    "width": 600,
+    "height": 350,
+    "data": {
+      "url": "data/disasters_clean.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"filter": "datum.insured_cost != ''"},
+      {"calculate": "toNumber(datum.insured_cost)", "as": "cost"},
+      {"filter": "datum.cost > 0 && datum.year <= 2023"},
+      {
+        "calculate": "floor(datum.year / 10) * 10 + 's'",
+        "as": "decade"
+      },
+      {
+        "aggregate": [{"op": "sum", "field": "cost", "as": "total_cost"}],
+        "groupby": ["decade"]
+      },
+      {
+        "calculate": "datum.total_cost / 1000000000",
+        "as": "cost_billions"
+      }
+    ],
+    "mark": {"type": "bar", "color": "#e74c3c"},
+    "encoding": {
+      "x": {
+        "field": "decade",
+        "type": "ordinal",
+        "axis": {"title": "Decade", "labelAngle": 0}
+      },
+      "y": {
+        "field": "cost_billions",
+        "type": "quantitative",
+        "axis": {"title": "Total Insured Cost (AUD Billions)", "format": ".1f"}
+      },
+      "tooltip": [
+        {"field": "decade", "title": "Decade"},
+        {"field": "cost_billions", "title": "Cost (AUD Billions)", "format": ".2f"}
+      ]
+    }
+  }
