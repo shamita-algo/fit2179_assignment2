@@ -1,44 +1,63 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Top 10 Deadliest Natural Disasters in Australia",
-      "subtitle": "Ranked by number of fatalities",
-      "fontSize": 16,
-      "subtitleFontSize": 12
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Top 10 Deadliest Natural Disasters in Australia",
+    "subtitle": "Ranked by number of fatalities",
+    "fontSize": 16,
+    "subtitleFontSize": 12
+  },
+  "width": 600,
+  "height": 350,
+  "data": {
+    "url": "https://raw.githubusercontent.com/shamita-algo/fit2179_assignment2/refs/heads/main/disasters_clean.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.fatalities > 0"},
+    {"calculate": "toNumber(datum.fatalities)", "as": "deaths"},
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "deaths", "order": "descending"}]
     },
-    "width": 600,
-    "height": 350,
-    "data": {
-      "url": "https://raw.githubusercontent.com/shamita-algo/fit2179_assignment2/refs/heads/main/disasters_clean.csv",
-      "format": {"type": "csv"}
+    {"filter": "datum.rank <= 10"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "bar", "color": "#d73027"},
+      "encoding": {
+        "x": {
+          "field": "deaths",
+          "type": "quantitative",
+          "axis": {"title": "Fatalities"}
+        },
+        "y": {
+          "field": "event",
+          "type": "ordinal",
+          "sort": "-x",
+          "axis": {"title": null, "labelLimit": 300}
+        },
+        "tooltip": [
+          {"field": "event", "title": "Event"},
+          {"field": "year", "title": "Year"},
+          {"field": "deaths", "title": "Fatalities"},
+          {"field": "category", "title": "Type"}
+        ]
+      }
     },
-    "transform": [
-      {"filter": "datum.fatalities > 0"},
-      {"calculate": "toNumber(datum.fatalities)", "as": "deaths"},
-      {
-        "window": [{"op": "rank", "as": "rank"}],
-        "sort": [{"field": "deaths", "order": "descending"}]
+    {
+      "mark": {
+        "type": "text",
+        "color": "#d73027",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "dx": 5,
+        "align": "left"
       },
-      {"filter": "datum.rank <= 10"}
-    ],
-    "mark": {"type": "bar", "color": "#d73027"},
-    "encoding": {
-      "x": {
-        "field": "deaths",
-        "type": "quantitative",
-        "axis": {"title": "Fatalities"}
-      },
-      "y": {
-        "field": "event",
-        "type": "ordinal",
-        "sort": "-x",
-        "axis": {"title": null, "labelLimit": 300}
-      },
-      "tooltip": [
-        {"field": "event", "title": "Event"},
-        {"field": "year", "title": "Year"},
-        {"field": "deaths", "title": "Fatalities"},
-        {"field": "category", "title": "Type"}
-      ]
+      "encoding": {
+        "x": {"datum": 410, "type": "quantitative"},
+        "y": {"datum": "Cyclone Mahina", "type": "ordinal"},
+        "text": {"value": "400+ lives lost in 1899"}
+      }
     }
-  }
+  ]
+}
