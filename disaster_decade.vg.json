@@ -1,31 +1,33 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Natural Disasters by Type and Decade",
-    "subtitle": "Breakdown of disaster categories across decades",
+    "text": "Disaster Type Rankings by Decade",
+    "subtitle": "How the most common disaster types have changed over time",
     "fontSize": 16,
     "subtitleFontSize": 12
   },
   "width": 600,
-  "height": 350,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/shamita-algo/fit2179_assignment2/refs/heads/main/disasters_clean.csv",
     "format": {"type": "csv"}
   },
   "transform": [
     {"filter": "datum.year >= 1950 && datum.year <= 2023"},
-    {
-      "calculate": "floor(datum.year / 10) * 10 + 's'",
-      "as": "decade"
-    },
+    {"calculate": "floor(datum.year / 10) * 10 + 's'", "as": "decade"},
     {
       "aggregate": [{"op": "count", "as": "count"}],
       "groupby": ["decade", "category"]
+    },
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "count", "order": "descending"}],
+      "groupby": ["decade"]
     }
   ],
   "layer": [
     {
-      "mark": "bar",
+      "mark": {"type": "line", "strokeWidth": 3},
       "encoding": {
         "x": {
           "field": "decade",
@@ -33,9 +35,10 @@
           "axis": {"title": "Decade", "labelAngle": 0}
         },
         "y": {
-          "field": "count",
+          "field": "rank",
           "type": "quantitative",
-          "axis": {"title": "Number of Disasters"}
+          "sort": "ascending",
+          "axis": {"title": "Rank", "values": [1, 2, 3, 4, 5]}
         },
         "color": {
           "field": "category",
@@ -46,27 +49,40 @@
           },
           "legend": {"title": "Disaster Type"}
         },
-        "order": {"field": "category", "type": "nominal"},
         "tooltip": [
           {"field": "decade", "title": "Decade"},
           {"field": "category", "title": "Type"},
+          {"field": "rank", "title": "Rank"},
           {"field": "count", "title": "Count"}
         ]
       }
     },
     {
-      "mark": {
-        "type": "text",
-        "color": "#333333",
-        "fontSize": 11,
-        "fontWeight": "bold",
-        "dy": -10,
-        "align": "center"
-      },
+      "mark": {"type": "point", "filled": true, "size": 100},
       "encoding": {
-        "x": {"datum": "2010s", "type": "ordinal"},
-        "y": {"datum": 62, "type": "quantitative"},
-        "text": {"value": "Busiest decade — 61 disasters"}
+        "x": {
+          "field": "decade",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "sort": "ascending"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Flood", "Storm", "Cyclone", "Bushfire", "Landslide"],
+            "range": ["#4575b4", "#fdae61", "#74add1", "#d73027", "#8c6d3f"]
+          }
+        },
+        "tooltip": [
+          {"field": "decade", "title": "Decade"},
+          {"field": "category", "title": "Type"},
+          {"field": "rank", "title": "Rank"},
+          {"field": "count", "title": "Count"}
+        ]
       }
     }
   ]
